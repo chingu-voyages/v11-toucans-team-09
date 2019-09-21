@@ -15,32 +15,46 @@
   <body>
     <!-- Header Section -->
     <header>
-      <!-- this element will go into the middle of the slider section -->
-      <h1>Signature 21</h1>
       <nav>
         <!-- logo will go to the left side of the nav bar  -->
         <!-- this element will go to the right side of the nav bar -->
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Menu</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#">Reservations</a>
+            <ul>
+              <li>Online</li>
+              <li>123.456.7890</li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
+    <!-- set img srcset -->
     <!-- Slider section will go here below the nav bar -->
     <!-- autoplay slider -->
     <main>
-      <!-- need to fill content for the food section -->
-      <section class="food"></section>
+      <section class="slider">
+        <!-- this element will go into the middle of the slider section -->
+        <h1>Signature 21</h1>
+        <!-- slide images -->
+        <img src="/images/eating-area.jpg" alt="" />
+        <img src="/images/dinner-table.jpg" alt="" />
+        <img src="/images/meal-dinner-table.jpg" alt="" />
+        <img src="/images/overhead-view-dinning-room.jpg" alt="" />
+      </section>
       <!-- fill content for chef section  -->
       <!-- need image -->
       <section class="chef">
         <h2>Our Chef</h2>
         <p></p>
+        <img src="/images/chef.jpg" alt="Signature 21's chef michelle" />
       </section>
       <!-- fill content for story section  -->
       <!-- need image for this section -->
       <section class="story">
+        <img src="/images/various-meals-on-display.jpg" alt="" />
         <h2>Our Story</h2>
         <p></p>
       </section>
@@ -160,6 +174,14 @@
       </section>
     </main>
     <footer>
+      <section class="newsletter">
+        <h3>Subscribe to our newsletter</h3>
+        <p>Get updates on Signature 21 news, events, and exclusive offers.</p>
+        <form action="">
+          <input type="email" name="email" id="email" />
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
       <section class="address">
         <h3>Address</h3>
         <p>1234 Anyroad Pl.</p>
