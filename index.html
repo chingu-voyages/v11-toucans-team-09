@@ -19,6 +19,14 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
+    <svg class="no-content" viewBox="0 0 1 1">
+      <defs>
+        <filter id="colorFilter">
+          <feFlood flood-color="hsla(40, 15%, 95%, 1)" flood-opacity=".3" />
+          <feBlend in="SourceGraphic" in2="colorFilter" mode="lighten" />
+        </filter>
+      </defs>
+    </svg>
     <!-- Header Section -->
     <header>
       <nav id="page-nav">
