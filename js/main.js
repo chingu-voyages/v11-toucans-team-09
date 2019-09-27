@@ -5,7 +5,7 @@ const topOfNav = nav.offsetTop;
 function fixNav() {
 	if (window.scrollY >= topOfNav) {
 		document.body.classList.add("fixed-nav");
-		document.getElementById("slider").style["padding-top"] = "80px";
+		document.getElementById("slider").style["padding-top"] = "45px"; //changed from 80 to 45
 	} else {
 		document.body.classList.remove("fixed-nav");
 	}
