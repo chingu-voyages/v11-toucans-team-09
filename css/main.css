@@ -71,15 +71,21 @@ h5,
 h6 {
   font-family: adonis-web, serif;
   font-weight: 600;
-  font-style: bold;
   color: hsla(0, 0%, 0%, 1);
 
   /* color for the line below the headers */
   /* border-bottom: solid 0.2rem hsla(15, 85%, 50%, 1); */
 }
-/* hidding the logo for now to adjust the size of the slider */
+
 .logo {
-  display: none;
+  position: absolute;
+  display: grid;
+  place-content: center;
+  font-size: calc(45px + (60 - 20) * ((100vw - 350px) / (1600 - 350)));
+  width: 100%;
+  margin: 0;
+  /* background: hsla(40, 15%, 95%, 0.25); Will be used on the images filter property*/
+  transform: translateY(40vh);
 }
 
 .slideshow {
