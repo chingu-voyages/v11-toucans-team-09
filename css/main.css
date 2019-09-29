@@ -109,13 +109,13 @@ h6 {
   display: grid;
   grid-template-columns: repeat(5, 100vw);
   overflow-x: hidden;
-  filter: url('#colorFilter');
 }
 
 .slide {
   width: 100vw;
   height: calc(100vh - 44px);
   object-fit: cover;
+  filter: url('#colorFilter');
 }
 
 /* Slides animation */
