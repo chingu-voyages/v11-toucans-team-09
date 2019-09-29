@@ -22,7 +22,7 @@
     <svg class="no-content" viewBox="0 0 1 1">
       <defs>
         <filter id="colorFilter">
-          <feFlood flood-color="hsla(40, 15%, 95%, 1)" flood-opacity=".3" />
+          <feFlood flood-color="hsla(40, 15%, 90%, 1)" flood-opacity=".3" />
           <feBlend in="SourceGraphic" in2="colorFilter" mode="lighten" />
         </filter>
       </defs>
@@ -45,14 +45,27 @@
       </nav>
     </header>
     <!-- set img srcset -->
-    <!-- Slider section will go here below the nav bar -->
-    <!-- autoplay slider -->
     <main>
-      <section id="slider">
-        <!-- this element will go into the middle of the slider section -->
+      <section id="hero">
         <h1 class="logo"><i>Signature 21</i></h1>
         <!-- slide images -->
-        <img class="slideshow" name="slide" />
+        <section class="slideContainer">
+          <img class="slide" src="/images/dinner-table.jpg" alt="" />
+          <img class="slide" src="/images/eating-area.jpg" alt="" />
+          <img class="slide" src="/images/meal-dinner-table.jpg" alt="" />
+          <img
+            class="slide"
+            src="/images/overhead-view-dinning-room.jpg"
+            alt=""
+          />
+          <img
+            class="slide"
+            src="/images/various-meals-on-display.jpg"
+            alt=""
+          />
+        </section>
+        <!-- element for slideshow based on source -->
+        <!-- <img class="slideshow" name="slide" /> -->
       </section>
       <!-- fill content for chef section  -->
       <!-- need image -->
