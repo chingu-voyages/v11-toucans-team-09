@@ -22,7 +22,12 @@
     <svg class="no-content" viewBox="0 0 1 1">
       <defs>
         <filter id="colorFilter">
-          <feFlood flood-color="hsla(40, 15%, 95%, 1)" flood-opacity=".3" />
+          <feFlood
+            flood-color="hsla(40, 15%, 95%, 1)"
+            flood-opacity=".3"
+            width="105%"
+            x="0"
+          />
           <feBlend in="SourceGraphic" in2="colorFilter" mode="lighten" />
         </filter>
       </defs>
@@ -45,28 +50,78 @@
       </nav>
     </header>
     <!-- set img srcset -->
-    <!-- Slider section will go here below the nav bar -->
-    <!-- autoplay slider -->
     <main>
-      <section id="slider">
-        <!-- this element will go into the middle of the slider section -->
+      <section id="hero">
         <h1 class="logo"><i>Signature 21</i></h1>
         <!-- slide images -->
-        <img class="slideshow" name="slide" />
+        <section class="slideContainer">
+          <img class="slide" src="/images/dinner-table.jpg" alt="" />
+          <img class="slide" src="/images/eating-area.jpg" alt="" />
+          <img class="slide" src="/images/meal-dinner-table.jpg" alt="" />
+          <img
+            class="slide"
+            src="/images/overhead-view-dinning-room.jpg"
+            alt=""
+          />
+          <img
+            class="slide"
+            src="/images/various-meals-on-display.jpg"
+            alt=""
+          />
+        </section>
+        <!-- element for slideshow based on source -->
+        <!-- <img class="slideshow" name="slide" /> -->
       </section>
       <!-- fill content for chef section  -->
       <!-- need image -->
+      <section class="specials">
+        <h3>Our Specials</h3>
+        <ul>
+          <li>
+            <h3>Cheese Plate</h3>
+            <p>Assorted artisan cheeses, fig jam, fresh breads 10</p>
+          </li>
+          <li>
+            <h3>Oregon Trout</h3>
+            <p>
+              Sautéed fresh boneless trout with tarragon butter sauce, parsley
+              and caramelized shallots 19
+            </p>
+          </li>
+          <li>
+            <h3>Dulcey Cheesecake</h3>
+            <p>Pistachio ganache, plum compote, white peach sorbet 12</p>
+          </li>
+        </ul>
+      </section>
       <section class="chef">
         <h2>Our Chef</h2>
-        <p></p>
+        <p>
+          Michelle is our head chef at Signature 21. After graduating from the
+          Culinary Institute of America where she earned a degree in Culinary
+          Arts, Michelle spent time cooking in various restaurants in New York.
+          She was hired as an assistant to the chef Scott’s flagship restaurant
+          where she was mentored under the great chef Scott.
+        </p>
+        <p>
+          Michelle joined the team at Signature21’s launch as head chef creating
+          a menu of excellent cuisine that is enjoyed by people from around the
+          world. At the helm of a restaurant her cuisine has been awarded with
+          various rave reviews by many food critics.
+        </p>
         <img src="images/chef.jpg" alt="Signature 21's chef michelle" />
       </section>
       <!-- fill content for story section  -->
-      <!-- need image for this section -->
       <section class="story">
         <img src="images/various-meals-on-display.jpg" alt="" />
         <h2>Our Story</h2>
-        <p></p>
+        <p>
+          We always believed that as long as we put all of our energy into
+          creating a flawless dining experience for our customers, in time we
+          would be known for just that. We have set out to create a modern and
+          eclectic dining experience with our cuisine combined with the backdrop
+          of an inviting and elegantly designed dining room.
+        </p>
       </section>
       <section class="menu">
         <section class="appetizers">
@@ -180,6 +235,41 @@
               </p>
             </li>
           </ul>
+        </section>
+        <section class="desserts">
+          <h2>Desserts</h2>
+          <ul>
+            <li>
+              <h3>Twice Baked Lemon Cake</h3>
+              <p>
+                Ivory lime cream, milk jam, macerated blackberries, lemon sorbet
+                10
+              </p>
+            </li>
+            <li>
+              <h3>Millefoglie Risotto Pudding</h3>
+              <p>
+                Pickled rhubarb, moscato gelée, tarragon, pineapple sorbet 13
+              </p>
+            </li>
+
+            <li>
+              <h3>Espresso Budino</h3>
+              <p>Salted caramel, chocolate biscotti, hazelnut gelato 9</p>
+            </li>
+            <li>
+              <h3>Dulcey Cheesecake</h3>
+              <p>Pistachio ganache, plum compote, white peach sorbet 12</p>
+            </li>
+
+            <li>
+              <h3>Valrhona Chocolate Cake</h3>
+              <p>chocolate banana toffee sauce, caramel gelato 12</p>
+            </li>
+          </ul>
+        </section>
+        <section class="wineList">
+          <h3><a href="#">Wine List (PDF)</a></h3>
         </section>
       </section>
     </main>

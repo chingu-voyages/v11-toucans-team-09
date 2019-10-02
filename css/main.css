@@ -90,21 +90,46 @@ h6 {
 }
 
 /* svg filter for images in slider for better readability of logo */
-
 .no-content {
   position: fixed;
   width: 0.1px;
   height: 0.1px;
 }
 
-/* applied image filter here */
-.slideshow {
-  display: block;
-  text-align: center;
+/* .slideshow {
   width: 100%;
   height: calc(100vh - 45px);
   object-fit: cover;
   filter: url('#colorFilter');
+} */
+
+/* SLIDE SHOW */
+/* updated classes for slide show */
+.slideContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 100vw);
+  overflow-x: hidden;
+}
+
+.slide {
+  width: 100vw;
+  height: calc(100vh - 44px);
+  object-fit: cover;
+  filter: url('#colorFilter');
+}
+
+/* Slides animation */
+.moveSlide {
+  animation: moveLeft 0.3s ease-out forwards;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
 }
 
 #page-nav {
