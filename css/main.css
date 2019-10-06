@@ -135,32 +135,33 @@ h6 {
 /* SPECIALS */
 .specials {
   display: grid;
-  grid-template-columns: minmax(780px, 800px);
+  grid-template-columns: minmax(250px, 80vw);
   place-content: center;
   margin: 5rem 1rem;
-  height: 50vh;
 }
 .specials-title {
   text-transform: uppercase;
   text-align: center;
   border-bottom: solid 0.1rem hsla(15, 85%, 50%, 1);
   font-size: 1.6rem;
-  margin: 0;
+  margin: 0 0 3rem 0;
 }
 .specials-list {
   list-style-type: none;
   padding: 0;
   margin: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 300px));
+  grid-template-columns: repeat(3, minmax(250px, 70vw));
   grid-gap: 1rem;
   place-content: center;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .specials-image {
-  height: 100px;
-  width: 225px;
+  height: 200px;
+  width: 22vw;
+  margin: 1rem 0;
   object-fit: cover;
   object-position: 50% 50%;
   place-self: center;
@@ -255,20 +256,30 @@ h6 {
 
 .chef {
   display: grid;
-  grid-template-columns: 290px minmax(250px, 450px);
+  grid-template-columns: 1fr 1fr;
   place-content: center;
   grid-column-gap: 2rem;
-  margin: 5rem 1rem;
-  height: 50vh;
+  margin: 5rem auto;
+  max-width: 70%;
+}
+
+.chef-image {
+  height: 60vh;
+  width: 28vw;
+  object-fit: cover;
+  object-position: 50% 25%;
+  place-self: center;
 }
 
 .chef-story {
   place-self: center;
+  width: 35vw;
+  max-width: 400px;
 }
 
 .our-image {
-  height: 340px;
-  width: 290px;
+  height: 60vh;
+  width: 48vw;
   object-fit: cover;
   object-position: 50% 25%;
   place-self: center;
@@ -281,31 +292,44 @@ h6 {
 
 .story {
   display: grid;
-  grid-template-columns: minmax(250px, 450px) 290px;
+  grid-template-columns: 50vw 50vw;
   place-content: center;
-  grid-column-gap: 2rem;
-  margin: 5rem 1rem;
-  height: 50vh;
+  margin: 5rem 0;
 }
 
 .story-details {
   place-self: center;
+  width: 35vw;
+  max-width: 400px;
 }
 
+.display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+}
+
+.display-meal {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+  overflow: hidden;
+}
 footer {
   background: hsla(0, 0%, 20%, 1);
   color: hsla(40, 15%, 85%, 1);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 250px);
   grid-column-gap: 0.5rem;
   border-top: solid 0.2rem hsla(15, 85%, 50%, 1);
-  place-items: center;
+  place-content: center;
   padding: 0 0 2rem 0;
+  text-align: center;
 }
 
 footer h3 {
   color: hsla(40, 15%, 95%, 1);
-  text-align: center;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -314,10 +338,6 @@ footer h3 {
 .newsletter {
   grid-column: 1 / -1;
   padding: 2rem 0;
-}
-
-.newsletter form {
-  text-align: center;
 }
 
 .newsletter button {
@@ -331,6 +351,28 @@ footer h3 {
   padding: 0.5rem 1rem;
   margin: 0 0.5rem 0 0;
   color: hsla(0, 0%, 25%, 1);
+}
+
+.social h3 {
+  margin: 0 0 3.5rem 0;
+}
+
+.social p {
+  transform: translateY(-30px);
+}
+
+.social span {
+  padding: 0.5rem 0.75rem;
+  background: hsla(15, 85%, 50%, 1);
+  margin: 0 0.15rem;
+  border-radius: 0.15rem;
+  transition: 0.2s;
+}
+
+.social span:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -364,6 +406,50 @@ footer h3 {
 
   #page-nav input:checked ~ ul {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .specials-list {
+    display: grid;
+    grid-template-columns: minmax(250px, 70vw);
+    transition: all 0.25s linear;
+  }
+  .specials-image {
+    height: 150px;
+    width: 50vw;
+    margin: 0.5rem 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+  .story {
+    display: grid;
+    grid-template-columns: minmax(350px, 1fr);
+  }
+  .story-details {
+    width: 350px;
+  }
+  .our-image {
+    height: 30vh;
+    width: 90vw;
+  }
+
+  .chef {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .chef-image {
+    height: 40vh;
+    width: 80vw;
+  }
+  .chef-story {
+    margin: 1rem 0;
+    width: 350px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: minmax(350px, 1fr);
+    grid-gap: 2rem;
   }
 }
 
