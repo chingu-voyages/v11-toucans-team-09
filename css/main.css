@@ -181,6 +181,8 @@ h6 {
 	background-color: #ead9d5;
 }
 
+/* Restaurant Menu CSS styling*/
+
 .menu h1,
 .menu h2,
 .menu h3,
@@ -218,6 +220,9 @@ h6 {
 	flex-basis: 100%;
 	flex: 1;
 }
+
+/* Photography CSS */
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
